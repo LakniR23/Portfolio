@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><span>Lakni</span></a>
+
+                <ul id="sideMenu">
+                    <li>
+                        <a href="#header" class="nav-links active">Home</a>
+                    </li>
+    
+                    <li>
+                        <a href="#about" class="nav-links">About</a>
+                    </li>
+    
+                    <li>
+                        <a href="#projects" class="nav-links">Projects</a>
+                    </li>
+    
+                    <li>
+                        <a href="#contact" class="nav-links">Contact me</a>
+                    </li>
+                    <i class="fas fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <!--<div class="intro">
+        <h3>Undergraduate</h3>
+
+        <h1>Hi! I'm Lakni</h1>
+        <h1>From Sri Lanka</h1>
+    </div>-->
+    <section class="home">
+        <div class="home-content">
+            <br><br><br>
+            <h4>Hi!</h4>
+
+            <h1>I'm <span>Lakni<br></span></h1>
+            <h3>from Sri Lanka</h3>
+        </div>
+
+        <div class="img-box">
+            <img src="images/img.jpg" alt="Lakni">
+        </div>
+    </section>
+
+    <br><br>
+
+    <section id="about">
+        <h1>About me</h1>
+            <p>
+                An undergraduate specializing in Information
+                Technology with a strong foundation in front-end web
+                development. Proficient in HTML, CSS, and JavaScript,
+                with hands-on experience in building and maintaining
+                websites. Eager to contribute technical skills and a
+                passion for problem-solving to a dynamic team. Driven
+                to expand knowledge in full-stack development,
+                including PHP, MySQL, and modern frameworks.
+                Strong communication skills, attention to detail, and a
+                commitment to continuous learning and growth in the
+                field of software and web development.
+            </p>
+
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                <p class="tab-links" onclick="openTab('education')"">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li>
+                        <span>Project Management</span>
+                        <br>
+                        Leading teams, managing timelines, and ensuring project goals are met efficiently.
+                    </li>
+                    
+                    <li>
+                        <span>UI/UX</span>
+                        <br>
+                        Designing intuitive and visually appealing interfaces for web and mobile applications.
+                    </li>
+                    
+                    <li>
+                        <span>Front-End Development</span>
+                        <br>
+                        Creating interactive and responsive user interfaces using HTML, CSS, and JavaScript.
+                    </li>
+                    
+                    <li>
+                        <span>Back-End Development</span>
+                        <br>
+                        Developing server-side logic and databases to support web applications and services.
+                    </li>
+                    
+                    <li>
+                        <span>Database Management</span>
+                        <br>
+                        Organizing, storing, and retrieving data efficiently through SQL databases.
+                    </li>
+                    
+                    <li>
+                        <span>Responsive Web Design</span>
+                        <br>
+                        Ensuring websites work seamlessly across different devices and screen sizes.
+                    </li>
+                    
+                    <li>
+                        <span>PHP</span>
+                        <br>
+                        Writing server-side scripts to create dynamic websites and web applications.
+                    </li>
+                    
+                    <li>
+                        <span>Microsoft SQL Server</span>
+                        <br>
+                        Managing and querying relational databases with Microsoft SQL Server.
+                    </li>
+                    
+                    <li>
+                        <span>Web Design</span>
+                        <br>
+                        Creating aesthetically pleasing and functional websites with attention to user experience.
+                    </li>
+                    
+                    <li>
+                        <span>JavaScript</span>
+                        <br>
+                        Adding interactivity and dynamic behavior to web pages using JavaScript programming language.
+                    </li>
+                    
+                    <li>
+                        <span>Web Development</span>
+                        <br>
+                        Building and maintaining websites and web applications from front-end to back-end.
+                    </li>
+                    
+                    <li>
+                        <span>HTML</span>
+                        <br>
+                        Structuring content on the web with HTML tags and elements for easy navigation and accessibility.
+                    </li>
+                    
+                    <li>
+                        <span>CSS</span>
+                        <br>
+                        Styling and visually presenting web pages with CSS to enhance user experience.
+                    </li>
+                </ul>                
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li>
+                        <span>Sri Lanka Institute of Information Technology</span>
+                        <br>
+                        BSc. (Honours) Information Technology (Currently reading)
+                    </li>
+                    <li>
+                        <span>De Mazenod College</span>
+                        <br>
+                        G.C.E.Advanced Level - Biological Science Stream<br>
+                        G.C.E.Ordinary Level
+                    </li>
+                </ul>
+            </div>
+    </section>
+
+    <!--<div class="projects">
+        <div class="container">
+            <h1>My Projects</h1>
+            
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <h1>Dolce</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto earum fugiat non voluptatem deserunt reprehenderit, itaque cum, autem deleniti corrupti. Vel autem, quam possimus maxime eligendi aut nam ea?</p> 
+                    <a href="#">Learn more</a>                   
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h1>Edu Flex</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto earum fugiat non voluptatem deserunt reprehenderit, itaque cum, autem deleniti corrupti. Vel autem, quam possimus maxime eligendi aut nam ea?</p> 
+                    <a href="#">Learn more</a>                   
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-list"></i>
+                    <h1>PlanIt</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto earum fugiat non voluptatem deserunt reprehenderit, itaque cum, autem deleniti corrupti. Vel autem, quam possimus maxime eligendi aut nam ea?</p> 
+                    <a href="#">Learn more</a>                   
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <div id="projects">
+        <div class="container">
+            <h1>My Projects</h1>
+
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/cake.jpg" alt="Dolce">
+
+                    <div class="layer">
+                        <h3>Dolce</h3>
+
+                        <p>A simple, interactive website I created as my first personal project, applying skills from my website development courses, with a focus on responsive design, layout customization, and improving user experience with maps and navigation menus.</p>
+
+                        <a href="https://www.linkedin.com/posts/lakni-ranepura-821421244_webdevelopment-html-css-activity-7272716708765675520-_0QQ?utm_source=share&utm_medium=member_desktop"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/teacher1.jpg" alt="Dolce">
+
+                    <div class="layer">
+                        <h3>Edu Flex</h3>
+
+                        <p>An online LMS I developed with my team at SLIIT to enhance teacher training. I contributed to building course pages, the footer, support functionality, and the contact page, gaining valuable experience in full-stack development and user-centered design.</p>
+
+                        <a href="https://www.linkedin.com/posts/lakni-ranepura-821421244_webdevelopment-learningmanagementsystem-eduflex-activity-7272868713102512128-KAdF?utm_source=share&utm_medium=member_desktop"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/todo.jpg" alt="Dolce">
+
+                    <div class="layer">
+                        <h3>PlanIt</h3>
+
+                        <p>A to-do list website I developed to manage tasks efficiently, featuring options for categorizing tasks, a dynamic calendar, and a filter to view tasks by status. I gained hands-on experience with task sorting and calendar integration, learning more about JavaScript and web development.</p>
+
+                        <a href="https://www.linkedin.com/posts/lakni-ranepura-821421244_webdevelopment-planit-todolist-activity-7276182950713376768-_lfi?utm_source=share&utm_medium=member_desktop"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="www.linkedin.com/in/lakni-ranepura-821421244" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+
+                    <p><i class="fa-solid fa-paper-plane"></i>shashiprabhalakni@gmail.com</p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/lakni-ranepura-821421244"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Lakni Ranepura CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+
+                        <input type="email" name="Email" placeholder="Your Email" required>
+
+                        <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
+                    
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <p id="msg"></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="copyright">
+                <p>Copyright &copy; Lakni. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function openTab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sideMenu");
+        
+        function openMenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        const scriptURL = '';
+        const form = document.forms['submit-to-google-sheet']
+
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
+</body>
+</html>
